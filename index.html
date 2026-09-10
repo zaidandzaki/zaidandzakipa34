@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaidan Dzaki Prasetya Adi | Engineering Portfolio</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* Custom scrollbar and animations */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--background); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); }
+    .badge { display: inline-flex; align-items: center; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+  </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] min-h-screen antialiased flex flex-col font-sans">
+
+  <!-- TOP HEADER -->
+  <header class="border-b border-[var(--border)] bg-[var(--card)] sticky top-0 z-30 shadow-sm backdrop-blur-md bg-opacity-95">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">
+          ZD
+        </div>
+        <div>
+          <h1 class="text-base sm:text-lg font-bold tracking-tight text-[var(--foreground)] flex items-center gap-2">
+            Zaidan Dzaki Prasetya Adi, S.T.
+            <span class="badge bg-blue-500/10 text-blue-500 border border-blue-500/20 text-xs">ITS Surabaya</span>
+          </h1>
+          <p class="text-xs text-[var(--muted-foreground)]">Structural & BIM Engineer | GPA 3.74/4.00</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <a href="cv_zaidan_dzaki.pdf" target="_blank" class="px-3 py-1.5 rounded-lg text-xs font-medium border border-[var(--border)] bg-[var(--secondary)]/10 text-[var(--foreground)] hover:bg-[var(--secondary)]/20 transition flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.5L19 7.5V19a2 2 0 01-2 2z"/></svg>
+          CV PDF
+        </a>
+        <a href="portfolio_zaidan_dzaki.pdf" target="_blank" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white hover:bg-blue-700 shadow-sm transition flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.5L19 7.5V19a2 2 0 01-2 2z"/></svg>
+          Dossier PDF
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="border-b border-[var(--border)] bg-gradient-to-b from-[var(--card)] to-[var(--background)] py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-8 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Ready for Structural & BIM Engineering Roles
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-[var(--foreground)] leading-tight">
+          Transforming Structural Complexity into <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">Constructible Engineering Assets</span>
+        </h2>
+        <p class="text-sm sm:text-base text-[var(--muted-foreground)] leading-relaxed max-w-3xl">
+          Civil Engineering graduate from Institut Teknologi Sepuluh Nopember (ITS). Specializing in cable-stayed & tied-arch bridge design, high-rise building seismic analysis per SNI standards, geotechnical modeling with GEO5, and end-to-end parametric BIM modeling in Autodesk Revit & Navisworks.
+        </p>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <span class="badge bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)]">MIDAS Civil</span>
+          <span class="badge bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)]">Autodesk Revit (LOD 350)</span>
+          <span class="badge bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)]">SAP2000 & ETABS</span>
+          <span class="badge bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)]">GEO5 Geotechnical</span>
+          <span class="badge bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)]">Navisworks Clash Detection</span>
+        </div>
+      </div>
+      
+      <!-- Quick Info Card -->
+      <div class="lg:col-span-4 bg-[var(--card)] p-5 rounded-2xl border border-[var(--border)] shadow-sm space-y-3 text-xs">
+        <h3 class="font-bold text-sm text-[var(--foreground)] border-b border-[var(--border)] pb-2 flex items-center justify-between">
+          <span>Contact & Verification</span>
+          <span class="text-blue-500">Verified Credentials</span>
+        </h3>
+        <div class="space-y-2 text-[var(--muted-foreground)]">
+          <p class="flex justify-between"><strong class="text-[var(--foreground)]">Location:</strong> Surabaya, East Java, Indonesia</p>
+          <p class="flex justify-between"><strong class="text-[var(--foreground)]">Phone:</strong> +62 812-5255-8679</p>
+          <p class="flex justify-between"><strong class="text-[var(--foreground)]">Email:</strong> zaidandzakipa34@gmail.com</p>
+          <p class="flex justify-between"><strong class="text-[var(--foreground)]">LinkedIn:</strong> <a href="https://linkedin.com/in/zaidaaandpa" target="_blank" class="text-blue-500 hover:underline">zaidaaandpa</a></p>
+          <p class="flex justify-between"><strong class="text-[var(--foreground)]">Portfolio Slides:</strong> <span class="font-semibold text-[var(--foreground)]">42 High-Res Slides</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER & CATEGORY NAVIGATION -->
+  <div class="sticky top-16 z-20 bg-[var(--background)]/90 backdrop-blur-md border-b border-[var(--border)] py-3 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-3">
+      <div class="flex items-center space-x-1 sm:space-x-2 overflow-x-auto pb-1 sm:pb-0" id="filterContainer">
+        <button onclick="filterCategory('all')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition shadow-sm" data-category="all">All Projects (7)</button>
+        <button onclick="filterCategory('bridge')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--card)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] transition" data-category="bridge">Bridges & Long-Span</button>
+        <button onclick="filterCategory('bim')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--card)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] transition" data-category="bim">BIM & 3D Modeling</button>
+        <button onclick="filterCategory('site')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--card)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] transition" data-category="site">Site QC & Supervision</button>
+        <button onclick="filterCategory('geotech')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--card)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] transition" data-category="geotech">Geotechnical & Soils</button>
+        <button onclick="filterCategory('awards')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--card)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] transition" data-category="awards">Awards & Competitions</button>
+      </div>
+      <div class="text-xs text-[var(--muted-foreground)] hidden sm:block">
+        Click any slide image to open full-screen viewer
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN PROJECT GRID -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-10">
+
+    <!-- PROJECT 1: AIK BARI IV -->
+    <article class="project-card bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-200" data-category="bridge">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border)] pb-4 mb-5">
+        <div>
+          <span class="badge bg-blue-500/10 text-blue-500 border border-blue-500/20 mb-1">Bachelor Capstone Project</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-[var(--foreground)]">Aik Bari IV Bridge Modification (240 m Cable-Stayed Bridge)</h3>
+          <p class="text-xs sm:text-sm text-[var(--muted-foreground)]">Role: Lead Structural & BIM Modeler | Tools: MIDAS Civil, SAP2000, Revit LOD 350, SMath</p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs font-mono text-[var(--muted-foreground)]">Jun 2025 – Jan 2026</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Visuals / Slides -->
+        <div class="lg:col-span-5 space-y-3">
+          <div class="relative group rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--background)] cursor-pointer" onclick="openLightbox('portfolio_images/page-05.png', 'Aik Bari IV Cable-Stayed Bridge Model & Design Specifications')">
+            <img src="portfolio_images/page-05.png" alt="Aik Bari IV Bridge" class="w-full h-56 object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              View Full Presentation Slide
+            </div>
+          </div>
+          <!-- Additional thumbnail strips -->
+          <div class="grid grid-cols-3 gap-2">
+            <img src="portfolio_images/page-27.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-27.png', 'Parametric BIM Cable-Stayed Bridge Modeling')" title="Revit BIM Cable-Stayed">
+            <img src="portfolio_images/page-16.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-16.png', 'KJI Steel Arch Bridge Model')" title="KJI Arch Bridge">
+            <img src="portfolio_images/page-17.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-17.png', 'Rajansa Double-Span Tied Arch Bridge')" title="Rajansa 2x80m Arch">
+          </div>
+        </div>
+
+        <!-- Case Study Analysis -->
+        <div class="lg:col-span-7 space-y-4 text-xs sm:text-sm">
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-blue-500 mb-1">1. Project Brief</h4>
+            <p class="text-[var(--muted-foreground)] leading-relaxed">
+              Comprehensive geometric modification and redesign of the 240-meter Aik Bari IV Bridge from an existing steel truss system into a signature semi-harp cable-stayed bridge to enhance navigation clearance, aerodynamic stability, and long-span resilience.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-amber-500 mb-1">2. Technical Challenges</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">Non-Linear Cable-Structure Coupling:</strong> Managing geometric non-linearities (P-Delta, cable sag, large displacement) and balanced cantilever construction stage erection forces.</li>
+              <li><strong class="text-[var(--foreground)]">Seismic & Aerodynamic Flutter:</strong> Meeting stringent lateral displacement and flutter velocity thresholds per SNI 2833:2016 for long-span flexible decks.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-emerald-500 mb-1">3. Engineering Solutions & Impact</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">Initial Tension Optimization:</strong> Executed Unknown Load Factor (ULF) optimization in MIDAS Civil to compute target cable pre-tensions, achieving zero-tension deck limits upon bridge closure.</li>
+              <li><strong class="text-[var(--foreground)]">Aerodynamic Box Girder:</strong> Configured a streamlined orthotropic steel box girder with semi-harp stay layout, maximizing torsional rigidity.</li>
+              <li><strong class="text-[var(--foreground)]">LOD 350 BIM Delivery:</strong> Produced clash-free parametric Revit models detailing anchor heads, dampers, bearing pads, and deep bored-pile substructures.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: 10-STOREY RC BUILDING & BIM INFRASTRUCTURE -->
+    <article class="project-card bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-200" data-category="bim">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border)] pb-4 mb-5">
+        <div>
+          <span class="badge bg-indigo-500/10 text-indigo-500 border border-indigo-500/20 mb-1">BIM & Digital Twin Implementation</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-[var(--foreground)]">Integrated BIM Modeling for 10-Storey Building & Infrastructure</h3>
+          <p class="text-xs sm:text-sm text-[var(--muted-foreground)]">Role: Structural BIM Modeler & Coordinator | Tools: Autodesk Revit, Navisworks Manage, AutoCAD</p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs font-mono text-[var(--muted-foreground)]">May 2024 – Feb 2026</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-5 space-y-3">
+          <div class="relative group rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--background)] cursor-pointer" onclick="openLightbox('portfolio_images/page-26.png', 'BIM Modeling 10-Storey Building Structure in Revit')">
+            <img src="portfolio_images/page-26.png" alt="BIM 10 Storey Building" class="w-full h-56 object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              View Full Presentation Slide
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2">
+            <img src="portfolio_images/page-37.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-37.png', '10-Storey Structural Design Analysis')" title="10-Storey Report">
+            <img src="portfolio_images/page-25.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-25.png', 'Benjeng Environmental Infrastructure 3D Visualization')" title="3D Visualization">
+            <img src="portfolio_images/page-27.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-27.png', 'Bridge BIM Modeling')" title="Bridge Revit BIM">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4 text-xs sm:text-sm">
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-blue-500 mb-1">1. Project Brief</h4>
+            <p class="text-[var(--muted-foreground)] leading-relaxed">
+              Full lifecycle LOD 300–350 BIM modeling for a 10-storey reinforced concrete mixed-use facility and multi-type bridges, transforming conceptual 2D designs into fully clash-detected digital twins with automated schedules.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-amber-500 mb-1">2. Technical Challenges</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">High Spatial Congestion:</strong> Resolving geometric collisions between primary RC transfer girders, shear wall rebar boundaries, and MEP risers in tight ceiling plenums.</li>
+              <li><strong class="text-[var(--foreground)]">Model Parameterization:</strong> Standardizing rebar and steel connection families to prevent model lag while preserving fabrication-level detail.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-emerald-500 mb-1">3. Engineering Solutions & Impact</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">50+ Clashes Resolved:</strong> Ran systematic clash detection batches in Navisworks Manage, mitigating costly rework prior to contractor tender.</li>
+              <li><strong class="text-[var(--foreground)]">98% Volumetric BOQ Accuracy:</strong> Leveraged Revit schedule algorithms to extract dynamic concrete volumes and steel weights aligned with final tender sheets.</li>
+              <li><strong class="text-[var(--foreground)]">30% Drafting Speedup:</strong> Engineered reusable parametric Revit families for structural framing and bridge abutments.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3: RSMB HOSPITAL -->
+    <article class="project-card bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-200" data-category="site">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border)] pb-4 mb-5">
+        <div>
+          <span class="badge bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 mb-1">On-Site Execution & QA/QC</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-[var(--foreground)]">Muhammadiyah Babat Hospital (8-Storey RC Construction)</h3>
+          <p class="text-xs sm:text-sm text-[var(--muted-foreground)]">Role: Civil Engineer Site & BIM Intern | Tools: Revit BBS, Concrete Testing, Scheduling</p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs font-mono text-[var(--muted-foreground)]">Dec 2024 – Feb 2025</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-5 space-y-3">
+          <div class="relative group rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--background)] cursor-pointer" onclick="openLightbox('portfolio_images/page-09.png', 'Hospital Construction Practical Work & Site Execution')">
+            <img src="portfolio_images/page-09.png" alt="Hospital Project" class="w-full h-56 object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              View Full Presentation Slide
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2">
+            <img src="portfolio_images/page-36.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-36.png', 'RSMB Construction Practical Work Report')" title="RSMB Report">
+            <img src="portfolio_images/page-07.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-07.png', 'Building Condition Assessment Survey')" title="Surveyor">
+            <img src="portfolio_images/page-11.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-11.png', 'PT Tunas Jaya Sanur Finishing Supervision')" title="Tunas Jaya Sanur">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4 text-xs sm:text-sm">
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-blue-500 mb-1">1. Project Brief</h4>
+            <p class="text-[var(--muted-foreground)] leading-relaxed">
+              Field site supervision, constructability analysis, and quality assurance during the structural frame erection of an 8-storey reinforced concrete hospital designed as a Special Moment Resisting Frame (SRPMK).
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-amber-500 mb-1">2. Technical Challenges</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">Rebar Congestion in SRPMK Nodes:</strong> High rebar density at beam-column joint cores mandated by seismic provisions without allowing honeycomb formation during concrete vibration.</li>
+              <li><strong class="text-[var(--foreground)]">Material Wastage in Restricted Yards:</strong> Minimizing cutting scrap on site where staging space was constrained adjacent to operational medical facilities.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-emerald-500 mb-1">3. Engineering Solutions & Impact</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">7% Scrap Reduction via Revit BBS:</strong> Generated automated 3D Bar Bending Schedules and optimized bar cutting lengths prior to delivery.</li>
+              <li><strong class="text-[var(--foreground)]">100% Strength Conformance:</strong> Conducted strict slump testing and cylinder crush testing (7, 14, 28 days) per ASTM C39 / SNI 2847 before formwork stripping.</li>
+              <li><strong class="text-[var(--foreground)]">Cycle Productivity Tracking:</strong> Monitored equipment cycle times and pouring shifts to prevent critical path delays.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 4: GEOTECHNICAL & FOUNDATION SOLUTIONS -->
+    <article class="project-card bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-200" data-category="geotech">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border)] pb-4 mb-5">
+        <div>
+          <span class="badge bg-amber-500/10 text-amber-500 border border-amber-500/20 mb-1">Geotechnical & Foundation Design</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-[var(--foreground)]">Earth Retaining Structures, Slope Stability & Deep Piled Foundations</h3>
+          <p class="text-xs sm:text-sm text-[var(--muted-foreground)]">Role: Geotechnical Modeler & Lab Analyst | Tools: GEO5 (Sheeting, Slope, Pile), Lab Equipment</p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs font-mono text-[var(--muted-foreground)]">Jul 2024 – Jun 2025</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-5 space-y-3">
+          <div class="relative group rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--background)] cursor-pointer" onclick="openLightbox('portfolio_images/page-33.png', 'Retaining Structures, Sheet Piles & Geotextile Comparison Study')">
+            <img src="portfolio_images/page-33.png" alt="Geotechnical Retaining Wall" class="w-full h-56 object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              View Full Presentation Slide
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2">
+            <img src="portfolio_images/page-31.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-31.png', 'Deep Foundation Design & Soil Mechanics Application')" title="Deep Foundations">
+            <img src="portfolio_images/page-10.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-10.png', 'PT Geomarine Survey Dinamika Soil Investigation')" title="Geomarine Soil Testing">
+            <img src="portfolio_images/page-40.png" class="h-16 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-40.png', 'Geotechnical Design of Roads & Bridges')" title="Roads & Bridges Geotech">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4 text-xs sm:text-sm">
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-blue-500 mb-1">1. Project Brief</h4>
+            <p class="text-[var(--muted-foreground)] leading-relaxed">
+              Geotechnical slope stability analysis, deep pile group bearing evaluations, and comparative retaining structure design across complex alluvial soil strata subjected to high groundwater and seismic surcharges.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-amber-500 mb-1">2. Technical Challenges</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">Deep Soft Soil Strata:</strong> Elevated water tables and weak undrained shear strength creating high risk of rotational circular failure and basal heave.</li>
+              <li><strong class="text-[var(--foreground)]">Lateral Crest Displacement:</strong> Limiting retaining wall deflections under heavy operational surcharges without excessive material costs.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-emerald-500 mb-1">3. Engineering Solutions & Impact</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">Multi-Method Verification in GEO5:</strong> Confirmed safety factors (Bishop, Fellenius) satisfied standards: SF > 1.50 static and SF > 1.10 seismic.</li>
+              <li><strong class="text-[var(--foreground)]">Prestressed Ground Anchors:</strong> Recommended anchored sheet pile system, restricting lateral deflection to &le; 25 mm.</li>
+              <li><strong class="text-[var(--foreground)]">Soil Investigation & Pile Group Capacities:</strong> Computed ultimate axial & lateral pile resistance calibrated against CPT / SPT borehole logs from PLN tower and power plant projects.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 5: COMPETITIONS & EARTHQUAKE ENGINEERING (IDEERS & NATIONAL WINS) -->
+    <article class="project-card bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-200" data-category="awards">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border)] pb-4 mb-5">
+        <div>
+          <span class="badge bg-purple-500/10 text-purple-500 border border-purple-500/20 mb-1">International & National Podiums</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-[var(--foreground)]">IDEERS Taiwan & National Bridge Competitions Portfolio</h3>
+          <p class="text-xs sm:text-sm text-[var(--muted-foreground)]">Key Awards: 8th Place & Innovation Award IDEERS 2025, 1st Place CIVEX, 2nd Place CIVEST</p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs font-mono text-[var(--muted-foreground)]">2023 – 2025</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-5 space-y-3">
+          <div class="relative group rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--background)] cursor-pointer" onclick="openLightbox('portfolio_images/page-15.png', 'IDEERS 2025 Taiwan 8th Place & Structural Design Innovation Award')">
+            <img src="portfolio_images/page-15.png" alt="IDEERS Award" class="w-full h-56 object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              View Full Presentation Slide
+            </div>
+          </div>
+          <div class="grid grid-cols-4 gap-2">
+            <img src="portfolio_images/page-20.png" class="h-14 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-20.png', '1st Place & Favorite Winner CIVEX 2024')" title="CIVEX 1st Place">
+            <img src="portfolio_images/page-17.png" class="h-14 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-17.png', '2nd Runner-Up CIVEST 2025')" title="CIVEST 2nd Runner-Up">
+            <img src="portfolio_images/page-19.png" class="h-14 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-19.png', '2nd Winner CREATION 8th UGM')" title="CREATION 8th UGM">
+            <img src="portfolio_images/page-21.png" class="h-14 w-full object-cover rounded-lg border border-[var(--border)] cursor-pointer hover:opacity-80 transition" onclick="openLightbox('portfolio_images/page-21.png', '3rd Winner & Most Beautiful Bridge CIA 2024')" title="CIA 2024 Bridge">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4 text-xs sm:text-sm">
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-blue-500 mb-1">1. Seismic Innovation (IDEERS 2025 - Taiwan)</h4>
+            <p class="text-[var(--muted-foreground)] leading-relaxed">
+              Designed, built, and tested a 60 cm earthquake-resistant model featuring custom elastomeric base dampers. Selected as <strong class="text-[var(--foreground)]">8th Place Winner & received the Structural Design and Innovation Award</strong> out of 49 international university teams, successfully withstanding dynamic shake-table accelerations reaching <strong class="text-blue-500 font-bold">800 Gal</strong>.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-amber-500 mb-1">2. Long-Span Bridge Podiums</h4>
+            <ul class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+              <li><strong class="text-[var(--foreground)]">CIVEX 2024 (1st Place & Favorite):</strong> Modeled 200 m pedestrian cable/tied-arch bridge in SAP2000, optimizing cable hanger pre-tensions to balance dead loads.</li>
+              <li><strong class="text-[var(--foreground)]">CIVEST 2025 (2nd Runner-Up):</strong> Designed "Rajansa Bridge," a 2 &times; 80 m tied-arch steel bridge in MIDAS Civil, optimizing member efficiency by 15%.</li>
+              <li><strong class="text-[var(--foreground)]">CREATION 8th UGM (2nd Winner) & CIA 2024 (3rd & Most Beautiful):</strong> Recognized for superior structural weight-to-capacity performance.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[var(--foreground)] uppercase tracking-wider text-xs text-emerald-500 mb-1">3. Core Strength</h4>
+            <p class="text-[var(--muted-foreground)]">
+              Demonstrates rapid iterative finite element analysis, code compliance, aesthetic integration, and physical proof-loading calibration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SLIDE GALLERY BROWSER -->
+    <section class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-4 border-b border-[var(--border)] pb-3">
+        <div>
+          <h3 class="text-lg font-bold text-[var(--foreground)]">Complete Portfolio Slides Gallery</h3>
+          <p class="text-xs text-[var(--muted-foreground)]">Browse all 42 high-resolution presentation slides from the original portfolio dossier</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <input type="text" id="slideSearch" placeholder="Search page (e.g., 5, 15, 26)..." onkeyup="filterSlideNumber()" class="px-3 py-1.5 rounded-lg border border-[var(--border)] bg-[var(--background)] text-xs text-[var(--foreground)] focus:outline-none focus:ring-1 focus:ring-blue-500">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-3 max-h-[500px] overflow-y-auto p-1" id="galleryGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX / MODAL VIEWER -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm transition duration-300">
+    <div class="relative max-w-5xl w-full bg-[var(--card)] rounded-2xl overflow-hidden border border-[var(--border)] shadow-2xl flex flex-col max-h-[95vh]">
+      <div class="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between bg-[var(--card)]">
+        <h4 id="lightboxTitle" class="text-xs sm:text-sm font-semibold text-[var(--foreground)] truncate pr-4">Slide Preview</h4>
+        <button onclick="closeLightbox()" class="text-[var(--muted-foreground)] hover:text-[var(--foreground)] p-1 rounded-lg hover:bg-[var(--secondary)]/10 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="p-2 overflow-auto flex-1 flex items-center justify-center bg-black/50">
+        <img id="lightboxImg" src="" alt="Slide Preview" class="max-h-[80vh] w-auto object-contain rounded shadow-lg">
+      </div>
+      <div class="px-4 py-2.5 border-t border-[var(--border)] flex items-center justify-between text-xs text-[var(--muted-foreground)] bg-[var(--card)]">
+        <span id="lightboxIndex">Slide</span>
+        <div class="space-x-2">
+          <button onclick="prevSlide()" class="px-3 py-1 rounded bg-[var(--secondary)]/10 text-[var(--foreground)] hover:bg-[var(--secondary)]/20 transition">Previous</button>
+          <button onclick="nextSlide()" class="px-3 py-1 rounded bg-[var(--secondary)]/10 text-[var(--foreground)] hover:bg-[var(--secondary)]/20 transition">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[var(--border)] bg-[var(--card)] py-6 text-center text-xs text-[var(--muted-foreground)] mt-auto">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p>&copy; 2026 Zaidan Dzaki Prasetya Adi, S.T. All rights reserved.</p>
+      <p>Prepared for Global Structural Engineering & BIM Consultant Opportunities.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 42;
+
+    // Populate gallery grid
+    const galleryGrid = document.getElementById('galleryGrid');
+    for (let i = 1; i <= totalSlides; i++) {
+      const padIndex = i.toString().padStart(2, '0');
+      const imgSrc = `portfolio_images/page-${padIndex}.png`;
+      const item = document.createElement('div');
+      item.className = 'slide-item group relative rounded-lg overflow-hidden border border-[var(--border)] bg-[var(--background)] cursor-pointer aspect-video';
+      item.dataset.slide = i;
+      item.innerHTML = `
+        <img src="${imgSrc}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-200">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-[10px] font-bold">
+          Page ${i}
+        </div>
+        <div class="absolute bottom-1 right-1 bg-black/70 text-white text-[9px] px-1 rounded">
+          p.${i}
+        </div>
+      `;
+      item.onclick = () => openLightbox(imgSrc, `Portfolio Slide #${i} of ${totalSlides}`, i);
+      galleryGrid.appendChild(item);
+    }
+
+    function filterCategory(cat) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.dataset.category === cat) {
+          btn.className = 'filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition shadow-sm';
+        } else {
+          btn.className = 'filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--card)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] transition';
+        }
+      });
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (cat === 'all' || card.dataset.category === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function filterSlideNumber() {
+      const query = document.getElementById('slideSearch').value.trim();
+      document.querySelectorAll('.slide-item').forEach(item => {
+        if (!query || item.dataset.slide.includes(query)) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    function openLightbox(src, title, slideNum) {
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxTitle').innerText = title;
+      currentSlide = slideNum || parseInt(src.match(/page-(\d+)\.png/)[1], 10);
+      document.getElementById('lightboxIndex').innerText = `Slide ${currentSlide} of ${totalSlides}`;
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const lb = document.getElementById('lightbox');
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        currentSlide++;
+      } else {
+        currentSlide = 1;
+      }
+      const padIndex = currentSlide.toString().padStart(2, '0');
+      openLightbox(`portfolio_images/page-${padIndex}.png`, `Portfolio Slide #${currentSlide} of ${totalSlides}`, currentSlide);
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        currentSlide--;
+      } else {
+        currentSlide = totalSlides;
+      }
+      const padIndex = currentSlide.toString().padStart(2, '0');
+      openLightbox(`portfolio_images/page-${padIndex}.png`, `Portfolio Slide #${currentSlide} of ${totalSlides}`, currentSlide);
+    }
+
+    // Close on Escape or click outside
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    document.getElementById('lightbox').addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox') closeLightbox();
+    });
+  </script>
+</body>
+</html>
